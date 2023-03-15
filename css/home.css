@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* For setting Sidebar and Main horizontally  */
+.container {
+    display: flex;
+}
+
+/* sidebar section  */
+.sidebar {
+
+    width: 15vw;
+    height: 100vh;
+    border-right: 1px solid white;
+
+
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar ul li {
+    margin: 2.5rem 0;
+
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: white;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.sidebar ul li a:hover {
+    color: gray;
+    transition: .4s ease-in;
+}
+
+/* Main section  */
+.main {
+    width: 85vw;
+}
+
+.main .hamburger {
+    display: none;
+}
+
+/* info section insisde main  */
+.infoContainer {
+    min-height: 80vh;
+  
+    display: flex;
+   align-items: center;
+    justify-content: space-around;
+}
+
+/* devinfo section inside info-container  */
+.devInfo .hello,
+.about {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: .7rem 0;
+    font-size: 1.5rem;
+
+}
+
+.devInfo .name {
+    font-size: 2.5rem;
+    color: rgb(255, 51, 0);
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.infoContainer .devPic {
+    width: 60%;
+    
+}
+
+ .infoContainer .devPic img {
+
+    width: 50%;
+    margin: auto;
+}
+/* buttons inside devinfo  */
+.buttons .btn {
+    margin: .5rem .5rem;
+    padding: .3rem;
+    background: rgb(255, 51, 0);
+    font-size: .9rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buttons .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttons .btn a:hover {
+    color: gray;
+    transition: .3s ease-in;
+}
+
+@media (max-width:675px) {
+
+    /* sidebar section  */
+    .sidebar {
+        width: 35vw;
+        transition: .4s ease-in-out;
+    }
+
+    .opacity_width {
+        opacity: 0;
+        width: 0vw;
+    }
+
+    /* Main Section  */
+    .main_small_width {
+        width: 100vw;
+    }
+
+    .main .hamburger {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .ham {
+        position: absolute;
+        top: 1%;
+        left: 2%;
+        filter: invert(100%);
+    }
+
+    .cross {
+        position: absolute;
+        top: 1%;
+        left: 23%;
+        filter: invert(100%);
+    }
+
+/* info section insisde main  */
+    .infoContainer {
+        min-height: 70vh;
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+
+    }
+
+/* devinfo section inside info-container  */
+    .devInfo {
+        margin-top: 1rem;
+        margin-left: .5rem;
+    }
+
+    .devInfo .hello,
+    .about {
+        margin: 1rem 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 1.2rem;
+    }
+
+    .devInfo .name {
+        margin: .5em 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.5rem;
+        font-weight: bolder;
+
+    }
+
+     .infoContainer .devPic {
+        width: 100%;
+    }
+
+
+    .infoContainer .devPic img {
+        margin: 1rem auto;
+        width: 45%;
+
+
+
+    }
+
+
+
+
+
+
+
+}

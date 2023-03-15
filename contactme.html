@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/home.js" defer></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        body {
+            background: black;
+            color: white;
+        }
+
+
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* For setting Sidebar and Main horizontally  */
+        .container {
+            display: flex;
+        }
+
+        /* sidebar section  */
+        .sidebar {
+
+            width: 15vw;
+            height: 100vh;
+            border-right: 1px solid white;
+
+
+
+        }
+
+        .sidebar ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sidebar ul li {
+            margin: 2.5rem 0;
+
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 900;
+            color: white;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .sidebar ul li a:hover {
+            color: gray;
+            transition: .4s ease-in;
+        }
+
+        /* Main section  */
+        .main {
+            width: 85vw;
+
+        }
+
+        .main .hamburger {
+            display: none;
+        }
+        /* contact section inside main  */
+        .contact-container {
+                min-height: 80vh;
+                margin-left: .8rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contact-container h2 {
+                font-size: 2rem;
+                margin-bottom: .5rem;
+                border-bottom: 1px solid white;
+
+            }
+
+            .box li {
+                padding: 1rem;
+                font-size: 1.5rem;
+            }
+
+            .box li span,
+            a {
+                color: rgb(227, 41, 4);
+                text-decoration: none;
+                font-size: 1.5rem;
+
+            }
+
+        @media (max-width:675px) {
+
+            /* sidebar section  */
+            .sidebar {
+                width: 35vw;
+                transition: .4s ease-in-out;
+            }
+
+            .opacity_width {
+                opacity: 0;
+                width: 0vw;
+            }
+
+            /* Main Section  */
+            .main_small_width {
+                width: 100vw;
+            }
+
+            .main .hamburger {
+                display: block;
+
+            }
+
+            .ham {
+                position: absolute;
+                top: 1%;
+                left: 2%;
+                filter: invert(100%);
+            }
+
+            .cross {
+                position: absolute;
+                top: 1%;
+                left: 23%;
+                filter: invert(100%);
+            }
+   /* contact section inside main  */
+            .contact-container {
+                min-height: 75vh;
+                margin-left: .8rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contact-container h2 {
+                font-size: 1.4rem;
+                margin-bottom: .5rem;
+                border-bottom: 1px solid white;
+
+            }
+
+            .box li {
+                padding: .5rem;
+                font-size: 1rem;
+            }
+
+            .box li span,
+            a {
+                color: rgb(227, 41, 4);
+                text-decoration: none;
+                font-size: 1rem;
+            
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar opacity_width">
+            <ul>
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="/intro.html">My Intro</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+
+            </ul>
+        </div>
+        <div class="main main_small_width">
+            <div class="hamburger">
+                <img class="ham" src="../images/ham.png" alt="" width="4%">
+                <img class="cross" src="../images/cross.png" alt="" width="5%">
+            </div>
+            <div class="contact-container">
+                <h2>Connect with me </h2>
+                <div class="box">
+                    <ul>
+                        <li>Gmail-<span>geetambinani6@gmail.com</span></li>
+
+                        <li>Linkedin- <a href="https://www.linkedin.com/in/geetam-binani-135670255/">Click Here</a></li>
+                        <li>Facebook- <a href="https://www.facebook.com/geetamdas.binani.1/">Click Here</a></li>
+                        <li>Whatsapp- <span>9903711043</span></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

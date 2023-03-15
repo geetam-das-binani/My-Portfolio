@@ -1,0 +1,235 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* For setting Sidebar and Main horizontally  */
+.container {
+    display: flex;
+}
+
+/* sidebar section  */
+.sidebar {
+
+    width: 15vw;
+    height: 100vh;
+    border-right: 1px solid white;
+
+
+
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar ul li {
+    margin: 2.5rem 0;
+
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: white;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.sidebar ul li a:hover {
+    color: gray;
+    transition: .4s ease-in;
+}
+
+/* Main section  */
+.main {
+    width: 85vw;
+
+}
+
+.main .hamburger {
+    display: none;
+}
+
+/* form section inside main  */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+
+
+}
+
+.form-group {
+    margin-bottom: .8rem;
+
+}
+
+.form-group input {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    width: 50vw;
+    padding: .2rem;
+    border-radius: .5rem;
+}
+
+.form-group label {
+    font-weight: bolder;
+    font-family: serif;
+    font-size: 1.3rem;
+}
+
+.form-group p {
+    font-weight: 800;
+    margin-top: .5rem;
+}
+
+
+.form-group #checkbox {
+    display: inline;
+    width: unset;
+    cursor: pointer;
+}
+
+.form-group #submit {
+
+    background: rgb(255, 51, 0);
+    color: white;
+    width: 50%;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: unset;
+    display: unset;
+
+}
+
+.form-group #submit:hover {
+    color: gray;
+    transition: .3s ease-in;
+}
+
+@media (max-width:675px) {
+
+    /* sidebar section  */
+    .sidebar {
+        width: 35vw;
+        transition: .4s ease-in-out;
+    }
+
+    .opacity_width {
+        opacity: 0;
+        width: 0vw;
+    }
+
+    /* Main Section  */
+    .main_small_width {
+        width: 100vw;
+    }
+
+    .main .hamburger {
+        display: block;
+
+    }
+
+    .ham {
+        position: absolute;
+        top: 1%;
+        left: 2%;
+        filter: invert(100%);
+    }
+
+    .cross {
+        position: absolute;
+        top: 1%;
+        left: 23%;
+        filter: invert(100%);
+    }
+
+
+    /* form section inside main  */
+    .form-container {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 80vh;
+        justify-content: center;
+
+
+    }
+
+    .form-container h2 {
+        margin-left: .5rem;
+        margin-bottom: .5rem;
+        font-size: 1.2rem;
+        border-bottom: 1px solid black;
+    }
+
+    .form-group {
+        margin-left: .5rem;
+        margin-bottom: .5rem;
+
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: .2rem;
+        border-radius: .5rem;
+        margin-left: -1%;
+    }
+
+    .form-group label {
+        font-weight: bolder;
+        font-family: serif;
+        font-size: 1.1rem;
+    }
+
+    .form-group p {
+        font-weight: 800;
+        margin-top: .5rem;
+        font-size: .8rem;
+    }
+
+    .form-group .checkbox-text {
+        font-size: .9rem;
+    }
+
+    .form-group #submit {
+
+
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        flex-direction: unset;
+        display: unset;
+        width: 100%;
+
+    }
+
+
+
+}
