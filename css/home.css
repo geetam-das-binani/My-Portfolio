@@ -101,6 +101,7 @@ img {
 
     width: 50%;
     margin: auto;
+    border-radius: 50%;
 }
 /* buttons inside devinfo  */
 .buttons .btn {
@@ -201,6 +202,7 @@ img {
     .infoContainer .devPic img {
         margin: 1rem auto;
         width: 45%;
+        border-radius: 50%;
 
 
 

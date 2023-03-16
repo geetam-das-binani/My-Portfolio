@@ -1,6 +1,4 @@
 document.querySelector('.cross').style.display = "none"
-
-
 const hamburger = document.querySelector('.hamburger')
 const sidebar = document.querySelector('.sidebar')
 const main = document.querySelector('.main');
@@ -31,7 +29,7 @@ for (element of buttons) {
     element.addEventListener('click',(e)=> {
         let index = parseInt(e.target.id)
         infocontainer[index].getElementsByClassName('moreinfo')[0].classList.toggle('dnone')
-           console.log(this.id)
+          
 
     })
 }
